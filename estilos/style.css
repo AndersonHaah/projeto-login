@@ -8,7 +8,7 @@
 }
 
 html, body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -16,22 +16,103 @@ body {
     position: relative;
 }
 
-main {
-    display: block;
+#login {
+    position: absolute;
     background-color: white;
-    margin: auto;
     width: 250px;
-    height: 350px;
-    border-radius: 0px 0px 20px 20px;
-    margin-top: 300px;
+    height: 315px;
+    border-radius: 0px 0px 25px 25px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 100%);
+    
     
 }
 
-main h1 {
+#login h1 {
     text-align: center;
-    padding: 15px;
+    padding: 15px 0px 0px 0px;
 }
-main p {
-    padding: 10px;
+#login p {
+    padding: 9px;
     font-size: 0.8em;
+}
+
+.caixas {
+    background-color: #5F2C82;
+    padding: 1px;
+    border-radius: 8px;
+    margin: 0px 8px -17px 7px;
+}
+
+.letras {
+    background-color: #94CFCD;
+    padding: 3px;
+    border-radius: 8px;
+    height: 30px;
+    width: 75%;
+    border: 0px;
+    font-size: 1em;
+    margin: 1px 0px 1px 50px;
+}
+
+.letras:hover {
+    background-color: white;
+}
+
+
+#entrar {
+    background-color: #53AAA7;
+    width: 94%;
+    margin: 0px 0px 0px 8px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 6px;
+    color: white;
+    font-size: 1em;
+}
+
+#entrar:hover {
+    background-color: #2D6462;
+    cursor: pointer;
+}
+
+#recuperação {
+    background-color: white;
+    width: 94%;
+    margin: 5px 0px 0px 8px;
+    padding: 10px;
+    border: 1px solid #499F9D;
+    border-radius: 7px;
+    color: #2D6462;
+    font-size: 1em;
+}
+
+#recuperação:hover {
+    background-color: #6CD3CF;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    transform: translateY(20%);
+    border-radius: 30%;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: #5F2C82;
+    margin-left: 12px;
+}
+
+#img {
+    position: absolute;
+    background-image: url(../imagens/background04.jpg);
+    width: 250px;
+    height: 210px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 5%);
+    margin-top: 100px;
+    border-radius: 25px 25px 0px 0px;
+    background-size: cover;
 }

@@ -6,33 +6,46 @@
     <title>Tela de login</title>
     <!-- Icons google-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="estilos/style.css">
+    <!--Estilos-->
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/mq.css" media="screen">
 </head>
 <body>
     <main>
-        <section>
+        <section id="img">
+        </section>
+        <section id="login">
             <h1>Login</h1>
             <p>
                 Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
             </p>
-            <form action="cadastro.php" method="post" autocomplete="on">
-                <label for="iemail">
-                    <span class="material-symbols-outlined">person</span>
-                </label>
-                <input type="email" name="email" id="iemail">
+
+        
+                <form action="cadastro.php" method="post" autocomplete="on">
+            <div class="caixas">
+                    <label for="iemail" >
+                        <span class="material-symbols-outlined">person</span>
+                    </label>
+                    <input type="email" name="email" id="iemail" class="letras" placeholder="Seu e-mail">
+            </div>
+
                 <br>
-                <label for="isen">
-                    <span class="material-symbols-outlined">key</span>
-                </label>
-                <input type="password" name="sen" id="isen">
+
+            <div class="caixas">
+                    <label for="isen">
+                        <span class="material-symbols-outlined">key</span>
+                    </label>
+                    <input type="password" name="sen" id="isen" class="letras" placeholder="Sua senha">
+            </div>
+
                 <br>
-                <input type="submit" value="Entrar">
+
+                <input type="submit" value="Entrar" id="entrar">
                 <br>
-                <input type="button" value="Esqueci a senha">
+                <input type="submit" value="Esqueci a senha" id="recuperação">
             </form>
         </section>
-        <section>
-        </section>
+        
     </main>
 </body>
 </html>
