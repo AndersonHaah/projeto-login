@@ -1,14 +1,102 @@
 @charset 'UTF-8';
-
-@media screen and (min-width: 768px) {
+ /* ---------- TABLETS ---------------- */
+@media screen and (min-width: 768px) and (max-width: 928px) {
 
 body {
-    background-image: linear-gradient(to top, #5F2D82, #4B8B98);
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #4B8B98, #5F2D82);
+    position: relative;
 }
 
+#login {
+    position: absolute;
+    width: 500px;
+    height: 280px;
+    border-radius: 0px 20px 20px 0px;
+    top: -9%;
+    left: 65%;
 }
 
-@media screen and (min-width: 1024) {
-
+#img {
+    position: absolute;
+    width: 235px;
+    height: 280px;
+    border-radius: 20px 0px 0px 20px;
+    top: 13%;
+    left: 20%;
+    margin-top: 103px;
+    margin-left: 50px;
 }
 
+.letras {
+    width: 88%;
+}
+
+#entrar {
+    width: 97%;
+}
+
+#recuperação {
+    width: 97%
+
+}
+}
+
+/* ------------------- DESKTOPS ------------------- */
+
+
+@media screen and (min-width: 929px) {
+
+   body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #4B8B98, #5F2D82);
+    position: relative;
+}
+
+#login {
+    position: absolute;
+    width: 400px;
+    height: 50vh;
+    border-radius: 20px 0px 0px 20px;
+    top: -28%;
+    left: 33%;
+}
+
+#login h1 {
+    font-size: 2.5em;
+}
+
+#login p {
+    font-size: 1em;
+}
+
+#img {
+    position: absolute;
+    width: 400px;
+    height: 50vh;
+    border-radius: 0px 20px 20px 0px;
+    top: 6%;
+    left: 58%;
+    margin-top: 101px;
+    margin-left: 50px;
+}
+
+.letras {
+    background-attachment: fixed;
+    width: 325px;
+}
+
+#entrar {
+    width: 97%;
+}
+
+#recuperação {
+    width: 97%
+
+} 
+
+
+
+}
